@@ -1,0 +1,19 @@
+$font-family: "Roboto";
+$font-path: "../fonts";
+
+@mixin font-urls($fonttype, $font-weight) {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight;
+  src:
+          url("#{$font-path}/Roboto-#{$fonttype}.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  @include font-urls(Regular, 400);
+}
+
+@font-face {
+  @include font-urls(Medium, 500);
+}
