@@ -1,0 +1,31 @@
+.article {
+  margin: 50px auto;
+  color: $gray;
+  &-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-subtitle {
+    font-size: 14px;
+    color: $gray-2;
+    font-weight: 400;
+    margin: 10px 0;
+    & > .number {
+      color: $gray;
+      font-weight: bold;
+    }
+  }
+  &-wrapper {
+    width: 850px;
+    height: 350px;
+    margin: 0 auto;
+    &-text {
+      column-width: 390px;
+      column-gap: 45px;
+      column-rule: 1px dotted #ccc;
+    }
+  }
+  &-p {
+    margin: 0;
+  }
+}
