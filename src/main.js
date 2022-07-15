@@ -1,6 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import Icon from './components/ui/Icon.vue';
 
-import './assets/scss/style.scss'
+import './assets/scss/style.scss';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.component('Icon', Icon);
+
+app.mount('#app');
