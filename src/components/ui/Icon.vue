@@ -3,6 +3,8 @@ import { computed } from 'vue';
 
 import menu from '../../assets/svg/menu.svg';
 import arrow from '../../assets/svg/arrow.svg';
+import find from '../../assets/svg/find.svg';
+import cancel from '../../assets/svg/cancel.svg';
 
 const props = defineProps({
   name: String,
@@ -11,6 +13,8 @@ const props = defineProps({
 const icons = {
   menu,
   arrow,
+  find,
+  cancel,
 };
 
 const iconToShow = computed(() => icons[ props.name ]);
