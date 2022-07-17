@@ -5,7 +5,7 @@ import ListTask from './components/tasks/ListTask.vue';
 import SearchTask from './components/tasks/SearchTask.vue';
 import WidgetTask from './components/tasks/WidgetTask.vue';
 
-const step = ref(2);
+const step = ref(3);
 
 const component = computed(() => {
   switch (step.value) {
