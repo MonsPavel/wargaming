@@ -9,6 +9,7 @@ const props = defineProps({
 });
 
 const selectedTag = computed(() => props.tags.find((item) => item.selected));
+const selectedTagVal = computed(() => selectedTag.value?.value || '');
 const showList = ref(false);
 
 const toggleTagList = () => showList.value = !showList.value;
@@ -30,7 +31,7 @@ const toggleTagList = () => showList.value = !showList.value;
     <div class="tags-mobile">
       <div class="tags-mobile-selected" @click="toggleTagList">
         <Icon name="menu" class="menu-icon"/>
-        <span>{{ selectedTag.value }}</span>
+        <span>{{ selectedTagVal }}</span>
       </div>
       <div
           class="tags-list"
