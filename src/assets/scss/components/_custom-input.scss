@@ -1,0 +1,21 @@
+.custom-input {
+
+}
+
+.custom-input__input {
+  display: inline-block;
+  width: 100%;
+  padding: 4px 12px;
+  font: inherit;
+  border: 1px solid $gray;
+  border-radius: 2px;
+  background-color: $white;
+  outline: none;
+  transition: 0.3s;
+  resize: vertical;
+
+  &:hover, &:focus {
+    border-color: $active-blue;
+    box-shadow: 0 0 0 2px transparentize($blue, 0.8);
+  }
+}
