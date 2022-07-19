@@ -1,0 +1,9 @@
+.choices {
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

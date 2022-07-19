@@ -1,0 +1,24 @@
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30px;
+  margin-bottom: 5px;
+
+  &-filter {
+    display: flex;
+    align-items: center;
+  }
+
+  &-search {
+    display: flex;
+    align-items: center;
+  }
+
+  &-title {
+    margin-right: 10px;
+  }
+
+  &-elements {
+    height: 25px;
+  }
+}
