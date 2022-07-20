@@ -49,7 +49,7 @@ const elements = computed(() => {
 </script>
 
 <template>
-  <ModalBase title="Диалог выбора элементов">
+  <ModalBase title="Диалог выбора элементов" @close="close">
     <template v-slot:modal-content>
       <div class="filters">
         <div class="filters-search">
