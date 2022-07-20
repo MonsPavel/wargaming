@@ -18,9 +18,7 @@ const removeItem = (id) => selectedItems.value = selectedItems.value.filter((ite
 <template>
   <div>
     <ChoicesList :list="selectedItems" @choice:remove="removeItem" show-count/>
-    <button @click="openChoiceModal">
-      Изменить мой выбор
-    </button>
+    <CustomButton @click="openChoiceModal" label="Изменить мой выбор"/>
     <ChoiceModal
         v-if="showModal"
         :items="elements"
