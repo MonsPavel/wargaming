@@ -4,7 +4,7 @@ import TagsList from '../ui/TagsList.vue';
 
 const list = [ 'World Of Tanks', 'World Of Warplanes', 'World Of Warships' ];
 
-const selected = ref(null);
+const selected = ref(0);
 
 const tags = computed(() => list.map((item, index) => ({ value: item, selected: selected.value === index })));
 const setSelected = (index) => selected.value = index;
