@@ -1,0 +1,21 @@
+$font-family-roboto: "Roboto", sans-serif;
+$font-size-text: 14px;
+
+$black: #000;
+
+$gray: #585858;
+$gray-2: #393939;
+$gray-3: #707275;
+$gray-4: #C8C8C8;
+$light-gray: #F4F4F4;
+$input-gray: #F2F2F2;
+$grey25: transparentize(#000000, 0.75);
+
+$white: #fff;
+
+$breakpoint-tablet: 800px;
+
+$blue: #1890FF;
+$active-blue: #40A9FF;
+
+$media-bp-lt-tablet: " (max-width: #{$breakpoint-tablet - 1})";

@@ -1,0 +1,64 @@
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  font: inherit;
+  text-decoration: none;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 $light-gray;
+  transition: 0.3s;
+
+  &--blue, &.active {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+  }
+
+  &--link {
+    color: $gray;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  &--cancel {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:hover {
+    color: $active-blue;
+    border-color: $active-blue;
+
+    &.custom-button--blue {
+      background-color: $active-blue;
+      color: $white;
+    }
+
+    &.custom-button--link {
+      background-color: transparent;
+      color: $gray-2;
+    }
+  }
+
+  &.custom-button--disabled {
+    color: $grey25;
+    background-color: $light-gray;
+    border-color: $gray;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.custom-button__icon {
+  margin-right: 9px;
+}
+

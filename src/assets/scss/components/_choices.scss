@@ -1,0 +1,18 @@
+.choices {
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+
+  &-item {
+    display: flex;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.choices-item-wrap {
+  padding: 5px 0;
+  display: flex;
+}
