@@ -20,7 +20,7 @@
   }
 
   &--link {
-    color: $blue;
+    color: $gray;
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -41,6 +41,11 @@
     &.custom-button--blue {
       background-color: $active-blue;
       color: $white;
+    }
+
+    &.custom-button--link {
+      background-color: transparent;
+      color: $gray-2;
     }
   }
 

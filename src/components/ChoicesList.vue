@@ -22,8 +22,10 @@ const elementsCount = computed(() => props.list.length);
 <template>
   <div class="choices">
     <div v-if="showCount">Выбрано элементов {{ elementsCount }} из 3</div>
-    <div v-for="item in list" class="choices-item">
-      {{ `Элемент ${item}` }} <CustomButton icon-name="close" @click="removeItem(item)"/>
+    <div class="choices-item-wrap">
+      <div v-for="item in list" class="choices-item">
+        {{ `Элемент ${item}` }} <CustomButton icon-name="close" @click="removeItem(item)" appearance="link"/>
+      </div>
     </div>
   </div>
 </template>

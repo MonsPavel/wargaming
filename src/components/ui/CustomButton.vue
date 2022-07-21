@@ -25,7 +25,6 @@ const className = computed(() => [
     'custom-button--blue': props.appearance === 'blue',
     'custom-button--link': props.appearance === 'link',
     'custom-button--disabled': attrs.disabled,
-    'custom-button--simple-red': props.appearance === 'simple-red',
   },
 ]);
 </script>
